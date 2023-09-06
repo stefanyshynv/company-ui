@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {      
         // Simple GET request with response type <any>
-        this.http.get<any>('http://localhost:8080/users').subscribe(data => {
+        this.http.get<any>('https://iknowit.up.railway.app/users').subscribe(data => {
             this.users = data;
         })
     }
